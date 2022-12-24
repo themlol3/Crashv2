@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/newroad2"
+        android:paddingTop="50dp">
+
+    <LinearLayout
+        android:id="@+id/modeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose the game mode:"
+            android:textColor="@color/white"/>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Touch"
+            android:textColor="@color/white"/>
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tilt"
+            android:textColor="@color/white"/>
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/modeLayout"
+            android:text="Fast Mode"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/return1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/returnbutton" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
