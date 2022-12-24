@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/car"
-            android:layout_width="80dp"
-            android:layout_height="160dp"
+            android:layout_width="60dp"
+            android:layout_height="120dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="165dp"
@@ -53,6 +53,38 @@
             android:layout_marginTop="143dp"
             android:layout_marginEnd="53dp"
             app:srcCompat="@drawable/rock_576668_1280" />
+
+
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="53dp"
+            app:srcCompat="@drawable/coin" />
+
+        <ImageView
+            android:id="@+id/coinBar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/kms"
+            app:srcCompat="@drawable/coin" />
+
+        <TextView
+            android:id="@+id/coinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/coinBar"
+            android:layout_marginLeft="5dp"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:text="0" />
 
 
         <TextView
@@ -99,6 +131,26 @@
             android:layout_height="80dp"
             android:layout_centerInParent="true"
             app:srcCompat="@drawable/play" />
+        <ImageView
+            android:id="@+id/board"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/play"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/trophe" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/board"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/settings" />
 
         <ImageView
             android:id="@+id/instructions"
@@ -116,6 +168,8 @@
             android:textColor="@color/white"
             android:textSize="50dp"
             android:text="Game Over" />
+
+
     </RelativeLayout>
 
 
